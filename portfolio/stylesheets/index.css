@@ -1,0 +1,74 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 100%; }
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+/*  background-image: url("dtlawait.jpg"); */
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+.fadeIn {
+    -vendor-animation-duration: 5s;
+}
+
+.name {
+	font-size: 200%;
+	letter-spacing: 7px;
+	margin-top: 20%;
+	margin-bottom: 0%;
+}
+
+.desc {
+	font-size: 80%;
+	letter-spacing: 7px;
+	margin-top: 1%;
+	margin-bottom: 20%;
+}
+
+.p-links {
+	font-size: 75%;
+	letter-spacing: 2px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	display: inline-block;
+	margin-right: 2%;
+	color: black;
+}
